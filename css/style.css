@@ -1,0 +1,523 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:ital,wght@0,500;1,300;1,400&display=swap');
+
+html{
+	font-size: 62.5%;
+	background-image: url(../css/fondo.jpg);
+}
+body{
+	margin: 0 auto;
+}
+
+h1{
+	font-size: 4rem;
+}
+
+h4{
+	font-size: 2rem;
+}
+
+form button{
+	margin: 20px;
+}
+
+header{
+}
+
+.nav{
+	background-color: rgba(227, 233, 181, 0.97);
+	height: 180px;
+	margin: auto;
+	position: sticky;
+	top: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul{
+	display:inline-block;
+	justify-content: end;
+	margin-right: 75px;
+}
+
+	nav ul li{
+		list-style: none;
+		margin: 6px;
+		display: inline-block;
+		font-size: 2.5rem;
+	}
+
+
+		nav ul li a{
+			text-decoration: none;
+			color: rgb(239, 119, 119);
+			display: inline-block;
+			background-color: rgb(203, 237, 155);
+			padding: 6px;
+			border-radius: 6px;
+		}
+
+			nav ul li a:hover{
+				background-color: rgb(32, 1, 133);
+				transition-duration: .35s;
+				color: bisque;
+			}
+
+form{
+	text-align: center;
+	width: 95%;
+}
+
+main{
+	width: 95%;
+}
+
+footer{
+	width: 95%;
+}
+
+.anchoNormalizado{
+	width: 95%;
+	margin: auto;
+}
+
+#logo{
+	width: 200px;
+	margin: 5px 5px;
+}
+
+.imgProducto{
+	width: 180px;
+	padding: 2rem;
+	display: block;
+}
+
+#imgPres{
+	margin: 10px;
+}
+
+	.imgPres img{
+		margin: 20px;
+	}
+
+.centrado{
+	display: inline-block;
+	text-align: center;
+}
+
+.tituloResaltado{
+	background-color: bisque;
+	font-weight: 500;
+	display: block;
+	margin: auto;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.tituloChico{
+	/*margin: 16px 0 16px 0;
+	font-size: 2rem;
+	background-color: rgb(220, 205, 185);
+	font-weight: 400;
+	display: block;
+	margin: 0 auto;*/
+	background-color: rgb(220, 195, 114);
+	font-size: 2.8rem;
+	font-weight: 400;
+	display: flex;
+	justify-content: center;
+	margin: 7px auto;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.tituloChiquitito{
+	background-color: rgb(220, 195, 114);
+	font-size: 2.3rem;
+	font-weight: 400;
+	display: flex;
+	justify-content: center;
+	margin: 7px auto;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.textCenter{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: flex-start;
+}
+
+.textRigth{
+	text-align: right;
+}
+
+.textLeft{
+	text-align: left;
+}
+
+.encabezado{
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.textoProducto{
+	font-size: 2rem;
+} 	
+
+.textoInfo{
+	font-weight: 500;
+	font-size: 2.5rem;
+	background-color: rgb(230, 206, 100);
+	border-radius: 5px;
+}
+
+.producto{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 190px;
+	background-color: rgba(255, 255, 255, 0.735);
+	margin: 15px 7% ;
+	text-align: center;
+}
+
+.formDestacado{
+	margin: auto;
+	padding: auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.button{
+	background-color: bisque;
+	border-radius: 25px;
+	padding: 0.5rem;
+	text-decoration: none;
+	font-size: 2rem;
+	display: flex
+	justify-content: center;
+}
+
+
+	.button:hover{
+		transition-duration: .2s;
+		background-color: rgb(187, 111, 19);
+	}
+
+.presentacion{
+	background-color: rgb(0, 109, 87);
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: 25px;
+}
+
+	.presentacion div{
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+	.presentacion h4{
+		justify-content: center;
+	}
+
+	#contenidoPres{
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+	}
+
+		#contenidoPres form{
+			width: 100%;
+		}
+
+.textoPresentacion{
+	font-size: 2rem;
+	display: inline-block;
+	margin: 15px 45px;	
+	padding: 15px;
+	background-color: bisque;
+	border-radius: 25px;
+}
+
+.fondoProyecto{
+	background-color: beige;
+	border-radius: 7.5px;
+}
+
+.pie{
+	display: block;
+	text-align: center;
+	background-color: bisque;
+	width: 100%;
+}
+
+.mapa{
+	border-radius: 10px;
+	border-style: double;
+	text-align: right;
+	display: block;
+}
+
+.lista{
+	margin: 0 auto;
+	list-style: disc;
+	font-weight: 500;
+	padding-left: 25px;
+}
+
+.contContTabla{
+	display: flex;
+	justify-content: center;
+}
+
+	.lista li{
+		font-size: 2rem;
+		font-weight: 500;
+	}
+
+#contenedorTabla{
+	width: 50%;
+	display: flex;
+	font-size: 1rem;
+	border: solid 1px black;
+}
+
+	#contenedorTabla table{
+		width: 100%;
+		text-align: left;
+		background-color: white;
+		border-collapse: collapse;
+	}
+
+		#contenedorTabla table th{
+			background-color: rgb(220, 195, 114);
+			border-bottom: solid 4px black;
+			color: black;
+		}
+
+#contenedorTabla tr td,th{
+	padding: 20px;
+	font-size: 2rem;
+}
+
+#contenedorTabla tr:nth-child(even){
+	background-color: #ddd;
+}
+
+#contenedorTabla tr:hover{
+	background-color: rgb(114, 71, 0);
+	color: white;
+}
+
+.nosotros1{
+	background-color: rgb(165, 180, 75);
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: 25px;
+}
+
+	.nosotros1 div{
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+.imgNos{
+	width: 50rem;
+}
+
+#contNos{
+width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+/*-------------------GRID-------------------------*/
+
+.bgcNos{
+	background-color: rgb(165, 180, 75);
+	border-radius: 10px;
+	margin-top: 25px;
+}
+
+.presentacionGrid{
+	display: grid;
+	min-width: 0;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas: 
+	"tit tit img"
+	"txt txt img"
+	"none but img";
+
+}
+
+#tit{
+	grid-area: tit;
+}
+
+#img{
+	grid-area: img;
+	margin: 15px;
+}
+
+#txt{
+	grid-area: txt;
+}
+
+#but{
+	grid-area: but;
+}
+
+
+
+.presentacionGrid2{
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	align-content: start;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 16% 26% 13% 20% 21%;
+	grid-template-areas: 
+	"img2 tit2 tit2"
+	"img2 txt2 txt2"
+	"img2 titc titc"
+	"img2 lis lis"
+	"img2 lis lis";
+
+}
+
+#tit2{
+	grid-area: tit2;
+}
+
+#lis{
+	grid-area: lis;
+	margin: 25px;
+	padding-left: 25px;
+}
+
+#titc{
+	grid-area: titc;
+}
+
+#img2{
+	grid-area: img2;
+	margin: 15px;
+
+}
+
+#txt2{
+	grid-area: txt2;
+}
+
+/*-------------Compras-------------*/
+
+.compras{
+	display: flex;
+	/*flex-wrap: wrap;*/
+	flex-direction: column;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 0.95);
+	margin: 15px 7% ;
+	text-align: center;
+	padding: 15px 0;
+	border: 3px dotted black;
+}
+
+.compraGrid{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: repeat(5 34%);
+	grid-template-areas: 
+	"infp imgT"
+	"env imgT"
+	"data imgT"
+	"but imgT"
+	"none imgT";
+}
+
+#imgT{
+	grid-area: imgT;
+}
+
+#infP{
+	grid-area: infP;
+}
+
+#env{
+	grid-area: env;
+}
+
+#data{
+	grid-area: data;
+}
+
+#but{
+	grid-area: but;
+}
+
+/*------------Contacto------------*/
+
+.contactoGrid{
+	background-color: rgb(165, 180, 75);
+	border-radius: 10px;
+	margin-top: 25px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	align-content: start;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 1fr 2fr 1fr;
+	grid-template-areas: 
+	"tit titc"
+	"map talk"
+	"none but";
+}
+
+.formContacto{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+#tit{
+	grid-area: tit;
+}
+
+#titc{
+	grid-area: titc;
+}
+
+#map{
+	grid-area: map;
+	width: 100%;
+	margin-left: 25px;
+}
+
+#talk{
+	grid-area: talk;
+}
+
+#but{
+	grid-area: but;
+	width: 8%;
+	margin: 15px auto;
+
+}

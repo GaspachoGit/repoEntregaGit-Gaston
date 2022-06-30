@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/logo.png">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style2.css">
+    <title>The Flowers - página principal</title>
+</head>
+<body>
+    <div class="gridIndex">
+        <nav class="nav navegador" >
+            <div>
+                <a href="index.html">
+                    <img src="imagenes/logo.png" alt="Logo de la empresa" id="logo">
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="Views/nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="Views/productos.html">Productos</a>
+                </li>
+                <li>
+                    <a href="Views/proyecto.html">Proyecto</a>
+                </li>
+                <li>
+                    <a href="Views/contacto.html">Contacto!</a>
+                </li>
+                <li>
+                    <a href="#redes">Seguinos!</a>
+                </li>
+
+            </ul>   
+        </nav>
+        <!--ends nav-->
+
+        <header class="header">
+            <img src="imagenes/header.jpg" alt="Header del proyecto" class="encabezado">
+        </header>
+        <!--ends header-->
+
+        <main class="textCenter main">
+            <div class="centrado"><h1 class="tituloResaltado">Bienvenidos a The FLowers</h1></div>
+            <br>
+            <div class="centrado"><h3 class="tituloChico">Lo más vendido del mes</h3></div>
+            <form action="Views/compras.html" class="buttonPiola centrado">
+                <div class="formDestacado" id="prod">
+                    <fieldset class="producto ">
+                        <legend class="textoInfo">La más comprada para regalos</legend>
+                        <img src="imagenes/produc/planta1.jpg" alt="planta 1" class="imgProducto centrado">
+                        
+                        <label for="añadir1" class="textoProducto">Planta nro° 1, 111$ </label>
+                        
+                        <label for="añadir1" class="textoProducto">Añadir al carro</label>
+                        <input type="checkbox" id="añadir1">
+                    </fieldset>
+                    <fieldset class="producto">
+                        <legend class="textoInfo">La más comprada para exteriores</legend>
+                        <img src="imagenes/produc/planta2.jpg" alt="planta 2" class="imgProducto centrado">
+                        
+                        <label for="añadir2" class="textoProducto">Planta nro° 2, 222$</label>
+                        
+                        <label for="añadir2" class="textoProducto">Añadir al carro</label>
+                        <input type="checkbox" id="añadir2">
+                    </fieldset>
+                    <fieldset class="producto">
+                        <legend class="textoInfo">La más comprada para interiores</legend>
+                        <img src="imagenes/produc/planta7.jpg" alt="planta 7" class="imgProducto centrado">
+                        
+                        <label for="añadir7" class="textoProducto">Planta nro° 3, 999$</label>
+                        
+                        <label for="añadir7" class="textoProducto">Añadir al carro</label>
+                        <input type="checkbox" id="añadir7">
+                    </fieldset>
+                </div>
+                <button class="button" id="but">Comprar</button>
+            </form>
+        </main>
+        <!--ends main-->
+        
+        <div class="presentacion nos">
+            <h3 class="tituloChico">Conocé más sobre nosotros y nuestro compromiso</h3>
+            <div>
+                <div id="imgPres" class="imgNos">
+                    <img src="imagenes/compromiso ambiental.jpg" alt="Imagen sobre el compromiso ambiental de la empresa." >
+                </div>
+                <div id="contenidoPres">
+                    <h4 class="tituloChico">Por un mundo mejor</h4>
+                    <p class="textoPresentacion">El cuidado del medio ambiente y el desarrollo sustentable de nuestras operaciones son parte fundamental de los compromisos de The Flowers inc. Nuestros procesos y actividades se apegan estrictamente a la normatividad y se enfocan en la protección del entorno.</p>
+                    <form action="Views/nosotros.html" class="centrado">
+                        <button class="button">Conocé más sobre nosotros!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- ends div -->
+        <footer id="redes" class="pie pata">
+            <h3 class="tituloChico">Seguinos en nuestras redes:</h3>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="imagenes/facebook.png" alt="logo de facebook" width="150px">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="imagenes/instagram.png" alt="logo de instagram" height="150px">
+            </a>
+        </footer>
+    </div>
+</body>
+</html>

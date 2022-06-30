@@ -1,0 +1,528 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto:ital,wght@0,500;1,300;1,400&display=swap');
+
+html{
+	font-size: 62.5%;
+	background-image: url(../css/fondo.jpg);
+}
+body{
+	margin: 0 auto;
+}
+
+h1{
+	font-size: 2rem;
+}
+
+h4{
+	font-size: 0.7rem;
+}
+
+/* form button{
+	margin: 20px;
+} */
+
+header{
+}
+
+.nav{
+	background-color: rgba(227, 233, 181, 0.97);
+	position: sticky;
+	top: 0px;
+    text-align: center;
+    height: 22.5rem;
+}
+
+nav ul{
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+	nav ul li{
+		list-style: none;
+		margin: 3px;
+		font-size: 1.7rem;
+	}
+
+
+		nav ul li a{
+			text-decoration: none;
+			color: rgb(239, 119, 119);
+			background-color: rgb(203, 237, 155);
+			padding: .3rem;
+			border-radius: .3rem;
+		}
+
+			nav ul li a:hover{
+				background-color: rgb(32, 1, 133);
+				transition-duration: .35s;
+				color: bisque;
+			}
+
+#logo{
+    width: 20rem;
+    margin: 5px 5px;
+}
+
+.textCenter{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-content: flex-start;
+
+}
+
+.tituloChiquitito{
+	background-color: rgb(220, 195, 114);
+	font-size: 0.7rem;
+	font-weight: 400;
+	display: flex;
+	justify-content: center;
+	margin: 7px auto;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.tituloChico{
+	/*margin: 16px 0 16px 0;
+	font-size: 2rem;
+	background-color: rgb(220, 205, 185);
+	font-weight: 400;
+	display: block;
+	margin: 0 auto;*/
+	background-color: rgb(220, 195, 114);
+	font-size: 1.7rem;
+	font-weight: 400;
+	display: flex;
+	justify-content: center;
+	margin: 7px auto;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.tituloResaltado{
+	background-color: bisque;
+	font-weight: 500;
+	display: block;
+	margin: auto;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.centrado{
+	display: inline-block;
+	text-align: center;
+}
+
+.imgProducto{
+	width: 70%;
+	padding: 2rem;
+	display: ;
+}
+
+.encabezado{
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+#imgPres{
+	margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+	#imgPres img{
+		margin: 0 auto;
+        width: 75%;
+	}
+
+.textoInfo{
+	font-weight: 500;
+	font-size: 1.6rem;
+	background-color: rgb(230, 206, 100);
+	border-radius: .5rem;
+}
+.textoProducto{
+	font-size: 1.3rem;
+}
+
+.presentacion{
+	background-color: rgb(0, 109, 87);
+	border-radius: 15px;
+	display: flex;
+    justify-content: center;
+	/* flex-direction: column; */
+	flex-wrap: wrap;
+	margin: 25px;
+}
+
+.button{
+	background-color: bisque;
+	border-radius: 25px;
+	padding: 0.5rem;
+	text-decoration: none;
+	font-size: 2rem;
+	display: flex
+	justify-content: center;
+    margin: auto;
+}
+
+
+	.button:hover{
+		transition-duration: .2s;
+		background-color: rgb(187, 111, 19);
+	}
+
+
+.pie{
+	display: block;
+	text-align: center;
+	background-color: bisque;
+	width: 100%;
+}
+
+.textoPresentacion{
+	font-size: 1.6rem;
+	display: inline-block;
+	margin: .3rem 0.8rem;	
+	padding: .7rem;
+	background-color: bisque;
+	border-radius: 25px;
+}
+
+.formDestacado{
+	margin: auto;
+	padding: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.producto{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 190px;
+	background-color: rgba(255, 255, 255, 0.735);
+	margin: 15px 7% ;
+	align-items: center;
+}
+
+#contenidoPres{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+/* -----GRIDS----- */
+
+.gridIndex{
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+    "nav"
+    "head"
+    "main"
+    "nos"
+    "pata";
+}
+
+.navegador{
+    grid-area: nav;
+}
+
+.header{
+    grid-area: head;
+    border: 4px solid black;
+}
+
+.main{
+    grid-area: main;
+    
+}
+
+.nos{
+    grid-area: nos;
+}
+
+.pata{
+    grid-area: pata;
+}
+
+/* -----------Contacto------------- */
+
+.contactoGrid{
+	background-color: rgb(165, 180, 75);
+	border-radius: 10px;
+	margin-top: 25px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	align-content: start;
+	/* grid-template-columns: 1fr 2fr;
+	grid-template-rows: 1fr 2fr 1fr; */
+	grid-template-areas: 
+	"tit"
+	"map"
+	"none"
+    "titc"
+    "talk"
+    "but";
+}
+
+.formContacto{
+	width: 90%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+#tit{
+	grid-area: tit;
+}
+
+#titc{
+	grid-area: titc;
+}
+
+#map{
+	grid-area: map;
+	width: 80%;
+	margin-left: 25px;
+}
+
+#talk{
+	grid-area: talk;
+}
+
+#but{
+	grid-area: but;
+	width: 30%;
+	margin: 15px auto;
+
+}
+
+
+/* ------MediaQueris------ */
+
+
+@media (min-width: 1200px) {
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 18rem;
+        top: 0px;
+    }
+
+    nav ul{
+        justify-content: end;
+        margin-right: 11rem;
+    }
+
+    nav ul li{
+        padding: 6px;
+        border-radius: 6px;
+		margin: 6px;
+		display: inline-block;
+		font-size: 2.5rem;
+	}
+
+        nav ul li a{
+            padding: .6rem;
+            border-radius: .6rem;
+        }
+
+
+    #logo{
+        width: 20rem;
+        margin-left: 13rem;
+
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+
+    h4{
+        font-size: 2rem;
+    }
+
+    .tituloResaltado{
+        background-color: bisque;
+        display: block;
+        margin: auto;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .tituloChico{	
+        font-size: 2.8rem;
+        display: flex;
+        justify-content: center;
+        margin: 7px auto;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .tituloChiquitito{
+        font-size: 2.3rem;
+        display: flex;
+        justify-content: center;
+        margin: 7px auto;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .button{
+        background-color: bisque;
+        border-radius: 25px;
+        padding: 0.5rem;
+        text-decoration: none;
+        font-size: 2.5rem;
+        display: flex
+        justify-content: center;
+    }
+
+    .presentacion{
+        background-color: rgb(0, 109, 87);
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 25px;
+    }
+    
+        .presentacion div{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+    
+        .presentacion h4{
+            justify-content: center;
+        }
+
+            #contenidoPres form{
+                width: 100%;
+            }
+    
+    .textoPresentacion{
+        font-size: 2.5rem;
+        margin: 15px 45px;	
+        padding: 15px;
+        border-radius: 25px;
+    }
+
+    .imgNos{
+        width: 180rem;
+        padding-bottom: 25px;
+    }
+    
+    .imgProducto{
+        width: 25rem;
+        padding: 2rem;
+        display: block;
+    }
+
+    .textoProducto{
+        font-size: 2rem;
+    } 	
+
+    .textoInfo{
+        font-size: 2.5rem;
+        border-radius: 5px;
+    }
+
+    .formDestacado{
+        width: 95%;
+        margin: auto;
+        padding: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    .anchoNormalizado{
+        width: 95%;
+        margin: auto;
+    }
+
+    .buttonPiola{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        
+        grid-template-areas: 
+        "prod"
+        "but";
+    }
+
+    #prod{
+        grid-area: prod;
+    }
+
+    #but{
+        grid-area: but;
+        width: 8%;
+        margin: auto;
+    }
+
+    /* ------CONTACTO------- */
+
+    .contactoGrid{
+        background-color: rgb(165, 180, 75);
+        border-radius: 10px;
+        margin-top: 25px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        align-content: start;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-areas: 
+        "tit titc"
+        "map talk"
+        "none but";
+    }
+    
+    .formContacto{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #tit{
+        grid-area: tit;
+    }
+    
+    #titc{
+        grid-area: titc;
+    }
+    
+    #map{
+        grid-area: map;
+        width: 100%;
+        margin-left: 25px;
+    }
+    
+    #talk{
+        grid-area: talk;
+    }
+    
+    #but{
+        grid-area: but;
+        width: 30rem;
+        margin: 15px auto;
+    
+    }
+}
